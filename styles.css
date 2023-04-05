@@ -1,0 +1,24 @@
+.content {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.nav {
+    grid-column: 1;
+    grid-row: span 2;
+
+}
+
+.logo {
+    grid-template-columns: 1fr 3fr;
+}
+
+.nav-list ul {
+    gap: 10px;
+    list-style-type: none;
+}
+
+.nav-list li a {
+    text-decoration: none;
+}
