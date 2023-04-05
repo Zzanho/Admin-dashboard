@@ -2,7 +2,7 @@
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 4fr;
     width: 100vw;
     height: 100vh;
     padding: 0;
@@ -10,24 +10,25 @@
 
 .left {
     grid-column: 1/2;
-    grid-row: 1/2;
+    grid-row: span 3;
+    background-color: #fee2e2;
 }
 
 .right {
     grid-column: 2/3;
-    grid-row: 1/2;
+    grid-row: span 3;
 }
 
 .nav {
-    grid-row: span 1;
+    grid-row: span 3;
     display: grid;
-    grid-template-rows: span 2;
-    background-color: #fee2e2;
+
+
 }
 
 .logo {
     display: flex;
-    ;
+
     align-items: center;
     padding: 8px;
     gap: 5px;
@@ -43,8 +44,8 @@
 }
 
 .simple-icon {
-    height: 1em;
-    width: 1em;
+    height: 1.5em;
+    width: 1.5em;
 }
 
 .top,
@@ -69,8 +70,116 @@
 }
 
 .header {
-    grid-column: 2;
-    grid-row: 1;
+    grid-column: 2/3;
+    grid-row: span 3;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 8px;
+    border-bottom: 1px solid gray;
+
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    grid-column: 1/2;
+    padding: 8px;
+}
+
+.search>img {
+    height: 1.5em;
+    width: 1.5em;
+
+}
+
+
+.notification-icon>img {
+    height: 1.5em;
+    width: 1.5em;
+
+}
+
+.profile-icon>img {
+    height: 1.5em;
+    width: 1.5em;
+
+}
+
+.search-bar {
+    border-radius: 25px;
+    border: none;
+    width: 100%;
+    background-color: rgba(254, 226, 226, .5);
+
+}
+
+.profile-big img {
+
+
+    width: 3em;
+    height: 3em;
+}
+
+.profile-big {
+    display: block;
+    align-items: center;
+}
+
+#one {
+
+    grid-column: 1/2;
+    display: grid;
+    align-items: center;
+}
+
+#two {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#three {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 3fr
+}
+
+
+#four {
+    grid-column: 2/3;
+    display: grid;
+    align-items: center;
+
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+
+button {
+    border: none;
+    border-radius: 25px;
+    width: 5em;
+    height: 2em;
+    background-color: #fee2e2;
+    font-weight: bold;
+
+}
+
+.profile-name {
+    display: grid;
+    align-items: center;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+
 }
