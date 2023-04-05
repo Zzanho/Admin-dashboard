@@ -26,7 +26,7 @@
 .nav {
     grid-row: span 3;
     display: grid;
-    min-width: 150px;
+
 
 
 }
@@ -65,7 +65,7 @@
     display: flex;
     flex-direction: column;
     min-width: 150px;
-
+    padding-left: 10px;
 }
 
 .nav-list ul {
@@ -225,8 +225,8 @@ h3 {
     grid-row: 2/3;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    gap: 10px;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
     padding: 10px;
     background-color: #eee;
 }
@@ -286,6 +286,8 @@ h3 {
     grid-area: 2/2/3/3;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    margin-right: 10px;
 }
 
 .announcements {
@@ -310,4 +312,33 @@ h3 {
 
 .trending {
     grid-row: 2/3;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr 13fr;
+    gap: 10px;
+    text-align: center;
+    ;
+}
+
+.trending-profiles {
+    display: grid;
+
+}
+
+.trending-profile-icon {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.trending-profile-icon img {
+    width: 3em;
+    height: 3em;
 }
